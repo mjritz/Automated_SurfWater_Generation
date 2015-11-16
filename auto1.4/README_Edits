@@ -1,0 +1,20 @@
+These are updates that have occurred since October 2015. Previous changes were not recorded. 
+
+1. Updated timestep to 2fs after running a timestep test. The README file on the test is under ~/README_TimeStep. (November 6th 2015)
+
+2. Updated the script to include bond angles. (November 12th 2015)
+        -The average values of the spring constants and the bending angles of the named alkanes (thesis_OLobanova), obtained from the fit to a Gaussian distribution function. The same intramolecular potentials (harmonic) are applied to describe all types of chain molecules (perfluoroalkane, semi-fluorinated, non-ionic surfactants). The details of the potential did not seem to be of importance according to work conducted by Muller et al. k(b)=7.583 kcal*mol-1*ang-2, k(a)= 2.650 kcal*mol-1*rad-2, angle = 158.6 degrees
+
+.... Need to ...
+
+Create database for file to include coarse-grained parameters for all measured chemistries - from group at imperial. 
+
+Integrate pressure tensor test in the z-direction to account for oil/vacuum interface. 
+
+Input file to include timestep.
+
+Integrate timestep test as an optional output for a system.
+
+How user friendly can this program be?
+    Can only be used with LAMMPS
+    Need to create potential tables for all beads.... probably easier to just read in parameters and let lammps calculate the intermolecular potential. 

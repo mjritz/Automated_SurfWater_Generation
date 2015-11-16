@@ -1,0 +1,74 @@
+                                                                                                 
+import "miesurf_ff.lt"                                                                                   
+
+Surf {                                                                                                   
+                                                                                                             
+  write('Data Atoms') {                                                                                  
+    $atom:CM1 $mol:. @atom:MieSurf/CM  0.00    0.0000    0.0000    0.0000
+    $atom:CM2 $mol:. @atom:MieSurf/CM  0.00    0.0000    0.0000    4.5000
+    $atom:CM3 $mol:. @atom:MieSurf/CM  0.00    0.0000    0.0000    9.0000
+    $atom:CM4 $mol:. @atom:MieSurf/CM  0.00    0.0000    0.0000   13.5000
+    $atom:CM5 $mol:. @atom:MieSurf/CM  0.00    0.0000    0.0000   18.0000
+    $atom:CM6 $mol:. @atom:MieSurf/CM  0.00    0.0000    0.0000   22.5000
+    $atom:OA1 $mol:. @atom:MieSurf/OA  0.00    0.0000    0.0000  27.0000
+    $atom:OA2 $mol:. @atom:MieSurf/OA  0.00    0.0000    0.0000  31.5000
+    $atom:CM7 $mol:. @atom:MieSurf/CM  0.00    0.0000   -9.0000    0.0000
+    $atom:CM8 $mol:. @atom:MieSurf/CM  0.00    0.0000   -4.5000    0.0000
+    $atom:CM9 $mol:. @atom:MieSurf/CM  0.00    0.0000    4.5000    0.0000
+    $atom:CM10 $mol:. @atom:MieSurf/CM  0.00    0.0000    9.0000    0.0000
+    $atom:CM11 $mol:. @atom:MieSurf/CM  0.00    0.0000  -13.5000   13.5000
+    $atom:CM12 $mol:. @atom:MieSurf/CM  0.00    0.0000   -9.0000   13.5000
+    $atom:CM13 $mol:. @atom:MieSurf/CM  0.00    0.0000   -4.5000   13.5000
+    $atom:CM14 $mol:. @atom:MieSurf/CM  0.00    0.0000    4.5000   13.5000
+    $atom:CM15 $mol:. @atom:MieSurf/CM  0.00    0.0000    9.0000   13.5000
+    $atom:CM16 $mol:. @atom:MieSurf/CM  0.00    0.0000   13.5000   13.5000
+    $atom:CM17 $mol:. @atom:MieSurf/CM  0.00    0.0000   -4.5000   22.5000
+    $atom:CM18 $mol:. @atom:MieSurf/CM  0.00    0.0000    4.5000   22.5000
+  }                                                                                                   
+                                                                                                         
+  write ('Data Bonds') {                                                                                 
+    $bond:bond1 @bond:MieSurf/CMCM $atom:CM1 $atom:CM2
+    $bond:bond2 @bond:MieSurf/CMCM $atom:CM2 $atom:CM3
+    $bond:bond3 @bond:MieSurf/CMCM $atom:CM3 $atom:CM4
+    $bond:bond4 @bond:MieSurf/CMCM $atom:CM4 $atom:CM5
+    $bond:bond5 @bond:MieSurf/CMCM $atom:CM5 $atom:CM6
+    $bond:bond6 @bond:MieSurf/CMOA $atom:CM6 $atom:OA1
+    $bond:bond7 @bond:MieSurf/OAOA $atom:OA1 $atom:OA2
+    $bond:bond8 @bond:MieSurf/CMCM $atom:CM7 $atom:CM8
+    $bond:bond9 @bond:MieSurf/CMCM $atom:CM8 $atom:CM1
+    $bond:bond10 @bond:MieSurf/CMCM $atom:CM1 $atom:CM9
+    $bond:bond11 @bond:MieSurf/CMCM $atom:CM9 $atom:CM10
+    $bond:bond12 @bond:MieSurf/CMCM $atom:CM11 $atom:CM12
+    $bond:bond13 @bond:MieSurf/CMCM $atom:CM12 $atom:CM13
+    $bond:bond14 @bond:MieSurf/CMCM $atom:CM13 $atom:CM4
+    $bond:bond15 @bond:MieSurf/CMCM $atom:CM4 $atom:CM14
+    $bond:bond16 @bond:MieSurf/CMCM $atom:CM14 $atom:CM15
+    $bond:bond17 @bond:MieSurf/CMCM $atom:CM15 $atom:CM16
+    $bond:bond18 @bond:MieSurf/CMCM $atom:CM17 $atom:CM6
+    $bond:bond19 @bond:MieSurf/CMCM $atom:CM6 $atom:CM18
+
+
+  write ('Data Angles'){
+    $angle:angle1 @angle:MieSurf/CMCM $atom:CM1 $atom:CM2 $atom:CM3
+    $angle:angle2 @angle:MieSurf/CMCM $atom:CM2 $atom:CM3 $atom:CM4
+    $angle:angle3 @angle:MieSurf/CMCM $atom:CM3 $atom:CM4 $atom:CM5
+    $angle:angle4 @angle:MieSurf/CMCM $atom:CM4 $atom:CM5 $atom:CM6
+    $angle:angle5 @angle:MieSurf/CMCM $atom:CM7 $atom:CM8 $atom:CM1
+    $angle:angle6 @angle:MieSurf/CMCM $atom:CM8 $atom:CM1 $atom:CM2
+    $angle:angle7 @angle:MieSurf/CMCM $atom:CM9 $atom:CM1 $atom:CM2
+    $angle:angle8 @angle:MieSurf/CMCM $atom:CM9 $atom:CM8 $atom:CM1
+    $angle:angle9 @angle:MieSurf/CMCM $atom:CM11 $atom:CM10 $atom:CM9
+    $angle:angle10 @angle:MieSurf/CMCM $atom:CM12 $atom:CM13 $atom:CM4
+    $angle:angle11 @angle:MieSurf/CMCM $atom:CM13 $atom:CM4 $atom:CM5
+    $angle:angle11 @angle:MieSurf/CMCM $atom:CM13 $atom:CM4 $atom:CM3
+    $angle:angle12 @angle:MieSurf/CMCM $atom:CM14 $atom:CM4 $atom:CM5
+    $angle:angle12 @angle:MieSurf/CMCM $atom:CM14 $atom:CM4 $atom:CM3
+    $angle:angle13 @angle:MieSurf/CMCM $atom:CM14 $atom:CM4 $atom:CM15
+    $angle:angle13 @angle:MieSurf/CMCM $atom:CM14 $atom:CM13 $atom:CM4
+    $angle:angle14 @angle:MieSurf/CMCM $atom:CM15 $atom:CM14 $atom:CM13
+    $angle:angle15 @angle:MieSurf/CMCM $atom:CM17 $atom:CM6 $atom:CM5
+    $angle:angle16 @angle:MieSurf/CMCM $atom:CM18 $atom:CM6 $atom:CM5
+    $angle:angle17 @angle:MieSurf/CMCM $atom:CM18 $atom:CM6 $atom:CM19
+ }                                                                                                
+                                                                                                                     
+}
